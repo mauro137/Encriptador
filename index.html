@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador by Mauro Lizarriaga</title>
+  </head>
+  <body>
+    <header>    
+      <h1>
+        <img src="Imagenes/Logo.png" alt="logo Alura" id="logo"/>
+      </h1>
+    </header>
+    <main>
+    <!-- Main -->
+    <div id="caja_principal"> 
+    <textarea id="txtEncriptar" placeholder="Insertar Texto"></textarea> <!-- Input principal -->
+    <span id="condiciones"> <!-- Arriba del boton encriptar-->
+      <p id="msj_acentos"> ERROR: NO SE PERMITEN ACENTOS </p>
+      <img src="Imagenes/Vector.png" alt="imagen vector !"/>
+      Solo letras minúsculas y sin acentos
+    </span>
+    <label for="btnEncriptar">
+      <input
+        type="button"
+        class="botones"
+        name="btnEncriptar"
+        id="btnEncriptar"
+        value="Encriptar"
+      />
+    </label>
+    <label for="btnDesencriptar">
+      <input   
+        type="button"
+        class="botones"      
+        name="btnDesencriptar"
+        id="btnDesencriptar"
+        value="Desencriptar"
+      />
+    </label>
+  </div>
+    <div id="caja"> <!-- Caja lateral derecha -->
+      <textarea id="txt_area"></textarea>
+      <div id="imgDescripcion">
+        <img src="Imagenes/Muñeco.png" alt="Muñeco" id="munieco" />
+        <p id="msgEncontrado">Ningún mensaje fue encontrado</p>
+        <p id="msgTxt">Ingresa el texto que desees encriptar o desencriptar.</p>    
+      </div>
+      <label for="btnCopiar">
+        <input type="button" name="btnCopiar" id="btnCopiar" value="Copiar" /> 
+    </div>
+  </main>
+  </body>
+  <script src="funciones.js"></script>
+</html>
+<!-- crear caja para texto y botones >
